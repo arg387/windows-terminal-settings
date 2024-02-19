@@ -1,0 +1,142 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "var": {
+    "Start": "Start 😊"
+    
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#06cdf5",
+          "foreground": "#ffffff",
+          "leading_diamond": "\ue0c2\ue0c3",
+          "style": "diamond",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "background": "#F77205",
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "style": "powerline",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        
+        {
+          "background": "#00a1f1",
+          "foreground": "#F3CB06",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "folder_icon": "\uf114",
+            "folder_separator_icon": "\\",
+            "home_icon": "\ueb06",
+            "style": "full"
+          },
+          "style": "powerline",
+          "template": " <#000000>\uf07c \uf061</> {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "#FF2600",
+          "foreground": "#F2CF07",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "branch_icon": " <#F2CF07>\ue0a0 </#F2CF07>",
+            "fetch_stash_count": true,
+            "fetch_status": false,
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+          "type": "git"
+        },
+        {
+          "background": "#3CFF00",
+          "foreground": "#1F211F",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "style": "powerline",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+        },
+        {
+          "background": "#060ae6",
+          "foreground": "#4d7a00",
+          
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "powerline",
+          
+          "template": " \ueba2 {{ .FormattedMs }} ",
+          "type": "executiontime"
+        },
+        {
+          "background": "#08e4d9",
+          "foreground": "#170542",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "time_format": "3:04 PM"
+          },
+          "style": "powerline",
+          "template": " \uf017 {{ .CurrentDate | date .Format }} ",
+          "type": "time"
+        },
+        {
+          "background": "#ccff00",
+          "foreground": "#193549",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "time_format": "Jan _2 2006"
+          },
+          "style": "powerline",
+          "template": " \uf073 {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0b2",
+          "type": "time"
+        },
+        {
+          "background": "#12e4ec",
+          "background_templates": [
+            "{{ if gt .Code 0 }}red{{ end }}"
+          ],
+          "foreground": "#930b0b",
+          "powerline_symbol": "\ue0c0\ue0c1",
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "diamond",
+          "template": " {{ if gt .Code 0 }}\uf421{{ else }}\uf469{{ end }}",
+          "trailing_diamond": "\ue0c0\ue0c1",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#cd5e42",
+          
+          "style": "plain",
+          "template": "\ue3bf",
+          "type": "root"
+          
+        },
+        {
+          "foreground": "#CD4277",
+          "style": "plain",
+          "template": " <#45F1C2><b>\u26a1</b></><#26C6F9><b>\uf072</b></><#26C6F9><b> {{.Var.Start}}</b></><#26C6DA> \ue0c0</><#26C6DB>\ue0c1</>",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
