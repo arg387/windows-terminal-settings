@@ -6,7 +6,6 @@
 follow the procedure of installation for windows from both these sites.
 
 **My personal theme**
-![Screenshot 2024-02-19 221258](https://github.com/arg387/windows-terminal-settings/assets/84933329/e2df96cd-3369-482f-8bc6-aef7dbb675ba)
 
-
-
+Updated version🚀
+![Screenshot 2024-08-08 023325](https://github.com/user-attachments/assets/e93724b9-6f59-405a-a63a-b63ed17bb4ce)
