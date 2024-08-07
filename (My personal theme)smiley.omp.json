@@ -94,7 +94,7 @@
           },
           "style": "powerline",
           "template": " \uf073 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b2",
+          "trailing_diamond": "\ue0b1",
           "type": "time"
         },
         {
@@ -108,7 +108,7 @@
             "always_enabled": true
           },
           "style": "diamond",
-          "template": " {{ if gt .Code 0 }}\uf421{{ else }}\uf469{{ end }}",
+          "template": " {{ if gt .Code 0 }}\uf421{{ else }}\uf469 {{ end }}",
           "trailing_diamond": "\ue0c0\ue0c1",
           "type": "status"
         }
@@ -120,15 +120,18 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#cd5e42",
-          
-          "style": "plain",
-          "template": "\ue3bf",
-          "type": "root"
-          
+          "background": "#06cdf5",
+          "foreground": "#ffffff",
+          "leading_diamond": "\ue0c2\ue0c3",
+          "style": "diamond",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
         },
+        
         {
+         
           "foreground": "#CD4277",
+          "background": "#0c0909",
           "style": "plain",
           "template": " <#45F1C2><b>\u26a1</b></><#26C6F9><b>\uf072</b></><#26C6F9><b> {{.Var.Start}}</b></><#26C6DA> \ue0c0</><#26C6DB>\ue0c1</>",
           "type": "text"
@@ -140,3 +143,4 @@
   "final_space": true,
   "version": 2
 }
+
