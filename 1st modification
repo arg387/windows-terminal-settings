@@ -16,6 +16,10 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -23,10 +27,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         }
     ],
     "copyFormatting": "none",
@@ -42,21 +42,39 @@
     {
         "defaults": 
         {
-            "backgroundImage": "C:\\Users\\Argha Saha\\Pictures\\wallpaper collection\\dragon.jpg",
-            "backgroundImageOpacity": 0.17,
-            "colorScheme": "Dracula",
+            "adjustIndistinguishableColors": "always",
+            "backgroundImage": null,
+            "backgroundImageOpacity": 0.51,
+            "colorScheme": "Catppuccin Macchiato",
+            "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "CaskaydiaCove Nerd Font Mono"
+                "face": "CaskaydiaCove Nerd Font"
             },
             "icon": "C:\\Windows\\System32\\shell32.dll",
             "intenseTextStyle": "all",
-            "opacity": 16,
+            "opacity": 33,
             "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true
         },
         "list": 
         [
+            {
+                "backgroundImage": null,
+                "backgroundImageOpacity": 0.26,
+                "commandline": "\"C:\\Users\\Argha Saha\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{a5962de2-2131-4766-b172-11cef26bf68f}",
+                "hidden": false,
+                "icon": "C:\\Windows\\System32\\Windows-Icons-main\\Icons\\applications\\terminal.ico",
+                "name": "PowerShell ",
+                "opacity": 20,
+                "padding": "24",
+                "startingDirectory": "%USERPROFILE%"
+            },
             {
                 "commandline": "wsl ~",
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -64,19 +82,6 @@
                 "icon": "C:\\Windows\\System32\\Windows-Icons-main\\Icons\\applications\\paint3d.ico",
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "backgroundImage": "C:\\Users\\Argha Saha\\Pictures\\AAWallpapers\\forest-2560x1440-mountains-violet-birds-art-hd-16431.jpg",
-                "commandline": "\"C:\\Users\\Argha Saha\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove Nerd Font Mono"
-                },
-                "guid": "{a5962de2-2131-4766-b172-11cef26bf68f}",
-                "hidden": false,
-                "icon": "C:\\Windows\\System32\\Windows-Icons-main\\Icons\\applications\\terminal.ico",
-                "name": "PowerShell (Copy)",
-                "startingDirectory": "%USERPROFILE%"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
@@ -93,19 +98,34 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "adjustIndistinguishableColors": "always",
                 "backgroundImage": "C:\\Users\\Argha Saha\\Pictures\\AAWallpapers\\abstract-nature-7680x4320-8k-21456.jpg",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "icon": "C:\\Windows\\System32\\WindowsIcons-main\\Icons\\applications\\edgeruntime.ico",
                 "name": "Windows PowerShell"
             },
             {
+                "font": 
+                {
+                    "face": "FiraCode Nerd Font Mono"
+                },
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "icon": "C:\\Windows\\System32\\WindowsIcons-main\\Icons\\applications\\testplans.ico",
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "hidden": false,
+                "name": "Arch",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -156,6 +176,29 @@
             "selectionBackground": "#FAFFAB",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#24273A",
+            "black": "#494D64",
+            "blue": "#8AADF4",
+            "brightBlack": "#5B6078",
+            "brightBlue": "#8AADF4",
+            "brightCyan": "#8BD5CA",
+            "brightGreen": "#A6DA95",
+            "brightPurple": "#F5BDE6",
+            "brightRed": "#ED8796",
+            "brightWhite": "#A5ADCB",
+            "brightYellow": "#EED49F",
+            "cursorColor": "#F4DBD6",
+            "cyan": "#8BD5CA",
+            "foreground": "#CAD3F5",
+            "green": "#A6DA95",
+            "name": "Catppuccin Macchiato",
+            "purple": "#F5BDE6",
+            "red": "#ED8796",
+            "selectionBackground": "#5B6078",
+            "white": "#B8C0E0",
+            "yellow": "#EED49F"
         },
         {
             "background": "#282A36",
@@ -365,6 +408,32 @@
             "yellow": "#808000"
         }
     ],
-    "themes": [],
+    "theme": "dark",
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Macchiato",
+            "tab": 
+            {
+                "background": "#24273AFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#1E2030FF",
+                "unfocusedBackground": "#181926FF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ],
     "useAcrylicInTabRow": true
 }
