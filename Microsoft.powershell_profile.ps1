@@ -1,5 +1,4 @@
 
-
 using namespace System.Management.Automation
 using namespace System.Management.Automation.Language
  
@@ -8,11 +7,22 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 
-
 oh-my-posh init pwsh --config 'C:\Users\Argha Saha\AppData\Local\Programs\oh-my-posh\themes\smiley.omp.json' | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
+# Nvim FZF sharkdp.bat{"https://github.com/sharkdp/bat"} configuration
 
+Import-Module -Name PSFzf
+$env:FZF_DEFAULT_OPTS = '--style full --height 70% --layout=reverse --border '
+function fiz(){
+    nvim $(fzf --preview "bat --style=numbers --color=always --line-range :30000 {}") 
+}
+# Nvim fzf configuration ends
+
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
