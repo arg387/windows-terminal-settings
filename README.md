@@ -10,3 +10,6 @@ follow the procedure of installation for windows from both these sites.
 Updated version🚀
 ![my1](https://github.com/user-attachments/assets/c1687b69-a2d8-4202-8461-234516a37ccb)
 
+Working for latest 
+- oh my posh version: v29.0.2 
+- powershell version: 7.5.4
