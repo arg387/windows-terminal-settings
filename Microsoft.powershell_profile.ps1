@@ -7,7 +7,7 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 
-oh-my-posh init pwsh --config 'C:\Users\Argha Saha\AppData\Local\Programs\oh-my-posh\themes\smiley.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Program Files\WindowsApps\ohmyposh.cli_29.11.0.0_x64__96v55e8n804z4\themes\smiley.omp.json' | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 # Nvim FZF sharkdp.bat{"https://github.com/sharkdp/bat"} configuration
