@@ -44,9 +44,9 @@
             "style": "full"
           },
           "template": " <#000000>\uf07c \uf061</> {{ .Path }} ",
-          "foreground": "#F3CB06",
+          "foreground": "#000000",
           "powerline_symbol": "\ue0c0\ue0c1",
-          "background": "#00a1f1",
+          "background": "#6DEBA2",
           "type": "path",
           "style": "powerline"
         },
@@ -77,9 +77,9 @@
             "always_enabled": true
           },
           "template": " \ueba2 {{ .FormattedMs }} ",
-          "foreground": "#4d7a00",
+          "foreground": "#000000",
           "powerline_symbol": "\ue0c0\ue0c1",
-          "background": "#060ae6",
+          "background": "#84B8F0",
           "type": "executiontime",
           "style": "powerline"
         },
@@ -88,7 +88,7 @@
             "time_format": "3:04 PM"
           },
           "template": " \uf017 {{ .CurrentDate | date .Format }} ",
-          "foreground": "#170542",
+          "foreground": "#000000",
           "powerline_symbol": "\ue0c0\ue0c1",
           "background": "#08e4d9",
           "type": "time",
@@ -100,7 +100,7 @@
           },
           "trailing_diamond": "\ue0b1",
           "template": " \uf073 {{ .CurrentDate | date .Format }} ",
-          "foreground": "#193549",
+          "foreground": "#000000",
           "powerline_symbol": "\ue0c0\ue0c1",
           "background": "#ccff00",
           "type": "time",
