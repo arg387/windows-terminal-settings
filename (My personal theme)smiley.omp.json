@@ -22,8 +22,8 @@
             "windows": "\uf17a"
           },
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "foreground": "#ffffff",
-          "background": "#06cdf5",
+          "foreground": "#3c096c",
+          "background": "#caf0f8",
           "type": "os",
           "style": "diamond"
 
@@ -31,7 +31,6 @@
         {
           "template": " <#ffffff>\uf007</> {{ .UserName }} ",
           "foreground": "#f4f4f4",
-          "powerline_symbol": "\ue0c0\ue0c1",
           "background": "#3905f7",
           "type": "session",
           "style": "powerline"
@@ -96,13 +95,13 @@
         },
         {
           "properties": {
-            "time_format": "Jan _2 2006"
+            "time_format": "Jan 2 2006"
           },
           "trailing_diamond": "\ue0b1",
           "template": " \uf073 {{ .CurrentDate | date .Format }} ",
           "foreground": "#000000",
           "powerline_symbol": "\ue0c0\ue0c1",
-          "background": "#ccff00",
+          "background": "#FFD93D",
           "type": "time",
           "style": "powerline"
         },
@@ -112,9 +111,9 @@
           },
           "trailing_diamond": "\ue0c0\ue0c1",
           "template": " {{ if gt .Code 0 }}\uf421 {{ else }}\uf469 {{ end }}",
-          "foreground": "#930b0b",
+          "foreground": "#dd2d4a",
           "powerline_symbol": "\ue0c0\ue0c1",
-          "background": "#12e4ec",
+          "background": "#000000",
           "type": "status",
           "style": "diamond",
           "background_templates": [
@@ -141,17 +140,18 @@
             "windows": "\uf17a"
           },
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "foreground": "#ffffff",
-          "background": "#1eb2d7",
+          "foreground": "#3c096c",
+          "background": "#758bfd",
           "type": "os",
           "style": "diamond"
         },
         {
-          "template": " <#45F1C2><b>⚡</b></><#26C6F9><b>\uf072</b></><#26C6F9><b> {{.Var.Start}}</b></><#26C6DA> \ue0c0</><#26C6DB>\ue0c1</>",
+          "template": " <#45F1C2><b>⚡</b></><#26C6F9><b>\uf072</b></><#26C6F9><b> {{.Var.Start}} </b></>",
           "foreground": "#CD4277",
-          "background": "#0c0909",
+          "background": "#000000",
           "type": "text",
-          "style": "plain"
+          "style": "diamond",
+          "trailing_diamond": "\ue0c0\ue0c1"
         }
       ],
       "newline": true
