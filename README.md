@@ -15,7 +15,7 @@ follow the procedure of installation for windows from all these sites.
 
 ### Instructions
 After every update check if there is any problem in the prompts. If that happens make sure to change the file locations for theme and oh-my-posh.exe file and add your personal theme into the theme file location if it is removed. Also using ```$PROFILE``` command in terminal check whether the terminal using your modified ps profile or not.
-If you want to add neofetch config for your terminal, make sure to add fastfetfch config file location according to the given path pattern inside the Microsoft.powershell_profile.ps1 file and install [fastfetch](https://github.com/fastfetch-cli/fastfetch). 
+If you want to add neofetch config for your terminal, make sure to add fastfetfch eagle config file location according to the given path pattern inside the Microsoft.powershell_profile.ps1 file and install [fastfetch](https://github.com/fastfetch-cli/fastfetch). If you want to use f14 fastfetch instead of eagle fastfetch config just copy the config from profile_snippet.ps1 file inside fastfetch-f14 folder and paste it inside the Microsoft.powershell_profile.ps1 file then paste the path for the f14 config file as mentioned before.
 
 ### Working for latest 
 - oh my posh version: v29.12.0
