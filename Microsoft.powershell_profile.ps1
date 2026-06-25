@@ -7,7 +7,7 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 
-oh-my-posh init pwsh --config 'C:\Program Files\WindowsApps\ohmyposh.cli_29.12.0.0_x64__96v55e8n804z4\themes\smiley.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'D:\customization\terminal-configs\theme\smiley.omp.json' | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 # Nvim FZF sharkdp.bat{"https://github.com/sharkdp/bat"} configuration
@@ -21,7 +21,7 @@ function fiz(){
 
 # Eagle Fastfetch startup config
 
-$eagleFastfetchRoot = 'D:\customization\fastfetch-configs\fastfetch-eagle'
+$eagleFastfetchRoot = 'D:\customization\terminal-configs\fastfetch-configs\fastfetch-eagle'
 $eagleFastfetchConfig = Join-Path $eagleFastfetchRoot 'config.jsonc'
 
 if ((Get-Command fastfetch -ErrorAction SilentlyContinue) -and
