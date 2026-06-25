@@ -44,7 +44,7 @@
         "list": 
         [
             {
-                "commandline": "C:\\Program Files\\WindowsApps\\ohmyposh.cli_29.12.0.0_x64__96v55e8n804z4\\oh-my-posh.exe",
+                "commandline": "C:\\Program Files\\WindowsApps\\ohmyposh.cli_29.18.0.0_x64__96v55e8n804z4\\oh-my-posh.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
