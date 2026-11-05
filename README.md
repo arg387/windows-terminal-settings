@@ -10,7 +10,8 @@ follow the procedure of installation for windows from all these sites.
 <p align="center">Updated version🚀</p>
 
 <img width="1005" height="224" alt="image" src="https://github.com/user-attachments/assets/998ad8fd-7caa-487d-8a7e-388d4ae75d2c" />
-<img width="1892" height="923" alt="2026-06-17_22-07" src="https://github.com/user-attachments/assets/8eb9fc8c-c4b9-4f8b-b8d1-dfebbfbb8b33" />
+<img width="1907" height="901" alt="2026-11-05_23-49" src="https://github.com/user-attachments/assets/ff6b93a6-c4a7-4a02-ae03-6b95d5352f24" />
+
 
 
 ### Instructions
@@ -19,6 +20,6 @@ If you want to add fastfetch config for your terminal, install [fastfetch](https
 If you want to use oh-my-posh themes instead of personal theme this is the theme file path "C:\Program Files\WindowsApps\ohmyposh.cli_29.18.0.0_x64__96v55e8n804z4\themes". Now copy the file path of any oh-my-posh theme and paste it inside Microsoft.powershell_profile.ps1 config file.
 ### Working for latest 
 - oh my posh version: v29.18.0
-- powershell version: 7.6.3
+- powershell version: 7.6.9
 
 
