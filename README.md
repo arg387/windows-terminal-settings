@@ -19,7 +19,7 @@ After every update check if there is any problem in the prompts. If that happens
 If you want to add fastfetch config for your terminal, install [fastfetch](https://github.com/fastfetch-cli/fastfetch) and make sure to add fastfetfch eagle config file location according to the given path pattern inside the Microsoft.powershell_profile.ps1 file. If you want to use f14 fastfetch instead of eagle fastfetch config just copy the config from profile_snippet.ps1 file of inside fastfetch-f14 folder and paste it inside the Microsoft.powershell_profile.ps1 file in the place of eagle fastfetch config then paste the path for the f14 config file as mentioned before.
 If you want to use oh-my-posh themes instead of personal theme this is the theme file path "C:\Program Files\WindowsApps\ohmyposh.cli_29.18.0.0_x64__96v55e8n804z4\themes". Now copy the file path of any oh-my-posh theme and paste it inside Microsoft.powershell_profile.ps1 config file.
 ### Working for latest 
-- oh my posh version: v29.18.0
+- oh my posh version: v33.0.0
 - powershell version: 7.6.9
 
 
